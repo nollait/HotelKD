@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HotelKD" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/textColor</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@color/textColor</item>
+    </style>
+
+    <style name="Theme.HotelKD" parent="Base.Theme.HotelKD" />
+</resources>
