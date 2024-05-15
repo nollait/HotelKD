@@ -1,7 +1,9 @@
 package com.example.hotelkd;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,31 +11,35 @@ import android.widget.TextView;
 
 public class MainActivityTwo extends AppCompatActivity {
 
-    private Button btnActTwo;
-    private Button btnDeveloperInfo;
+    private Button btnListAct;
+    private Button btnCreateBooking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_two);
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         // Инициализация элементов
-        btnActTwo = (Button) findViewById(R.id.btnActTwo);
-        btnDeveloperInfo = (Button) findViewById(R.id.btnDeveloperInfo);
+        btnListAct = (Button) findViewById(R.id.btnListAct);
+        btnCreateBooking = (Button) findViewById(R.id.btnCreateBooking);
 
         // Установка обработчиков событий
-        btnActTwo.setOnClickListener(new View.OnClickListener() {
+        btnListAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Код для перехода к расчету
+                Intent intent = new Intent(MainActivityTwo.this, BookingListActivity.class);
+                startActivity(intent);
             }
         });
 
 
-        btnDeveloperInfo.setOnClickListener(new View.OnClickListener() {
+        btnCreateBooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Код для отображения информации о разработчике
+                Intent intent = new Intent(MainActivityTwo.this, CreateBookingActivity.class);
+                startActivity(intent);
             }
         });
     }

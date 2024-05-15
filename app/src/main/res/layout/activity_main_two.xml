@@ -8,13 +8,13 @@
     tools:context=".MainActivityTwo">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnActTwo"
+        android:id="@+id/btnListAct"
         android:layout_width="152dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="280dp"
         android:backgroundTint="@color/blue"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Список номеров"
+        android:text="Список занятых номеров"
         android:textColor="@color/white"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,20 +23,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnDeveloperInfo"
+        android:id="@+id/btnCreateBooking"
         android:layout_width="152dp"
         android:layout_height="58dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="280dp"
         android:backgroundTint="@color/blue"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="О разработчике"
+        android:text="Добавление бронирования"
         android:textColor="@color/white"
         app:cornerRadius="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnActTwo"
+        app:layout_constraintBottom_toTopOf="@+id/btnListAct"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

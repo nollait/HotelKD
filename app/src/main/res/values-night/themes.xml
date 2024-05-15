@@ -8,4 +8,6 @@
         <item name="colorPrimaryVariant">@color/textColor</item>
         <item name="android:navigationBarColor">@color/textColor</item>
     </style>
+
+    <style name="Theme.HotelKD" parent="Base.Theme.HotelKD" />
 </resources>
