@@ -30,15 +30,14 @@ public class BookingAdapter extends ArrayAdapter<Booking> {
         TextView clientName = convertView.findViewById(R.id.clientName);
         TextView bookingStatus = convertView.findViewById(R.id.bookingStatus);
 
-        bookingNumber.setText(bookingNumber.getText() + " " + String.valueOf(booking.getBookingNumber()));
-        bookingDate.setText(bookingDate.getText() + " " + booking.getBookingDate());
-        roomType.setText(roomType.getText() + " " + booking.getRoomType());
-        checkInDate.setText(checkInDate.getText() + " " + booking.getCheckInDate());
-        checkOutDate.setText(checkOutDate.getText() + " " + booking.getCheckOutDate());
-        clientName.setText(clientName.getText() + " " + booking.getClientName());
-        bookingStatus.setText(bookingStatus.getText() + " " + booking.getBookingStatus());
+        bookingNumber.setText("Номер бронирования: " + String.valueOf(booking.getBookingNumber()));
+        bookingDate.setText("Дата бронирования: " + booking.getBookingDate());
+        roomType.setText("Тип номера: " + booking.getRoomType());
+        checkInDate.setText("Дата заезда: " + booking.getCheckInDate());
+        checkOutDate.setText("Дата выезда: " + booking.getCheckOutDate());
+        clientName.setText("Клиент: " + booking.getClientName());
+        bookingStatus.setText("Статус бронирования: " + booking.getBookingStatus());
 
         return convertView;
     }
-
 }
