@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -35,6 +37,10 @@ public class RoomListAdapter extends RecyclerView.Adapter<RoomListAdapter.RoomVi
         holder.roomIcon.setImageResource(room.getIcon());
         holder.roomName.setText(room.getName());
         holder.roomPrice.setText(room.getPrice());
+
+        holder.itemView.setOnClickListener(v -> {
+
+        });
     }
 
     @Override

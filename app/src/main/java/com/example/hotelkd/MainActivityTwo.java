@@ -39,7 +39,7 @@ public class MainActivityTwo extends AppCompatActivity {
         roomList.add(new Room(R.drawable.housefour, "Стандарт", "Цена: от 3200 рублей"));
         roomList.add(new Room(R.drawable.housefive, "Люкс", "Цена: от 4223 рублей"));
         // Здесь вы можете добавить данные в список комнат
-        // roomList.add(new Room(R.drawable.icon, "Название", "Цена"));
+        // roomList.add(new Room(R.drawable.icon, "Название", "Цена", "Описание"));
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

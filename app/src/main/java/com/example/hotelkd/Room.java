@@ -10,6 +10,7 @@ public class Room {
         this.icon = icon;
         this.name = name;
         this.price = price;
+
     }
 
     public int getIcon() {
