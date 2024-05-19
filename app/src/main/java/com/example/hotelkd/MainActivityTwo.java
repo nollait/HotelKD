@@ -33,11 +33,15 @@ public class MainActivityTwo extends AppCompatActivity {
         btnCreateBooking = (Button) findViewById(R.id.btnCreateBooking);
 
         roomList = new ArrayList<>();
-        roomList.add(new Room(R.drawable.houseone, "Люкс", "Цена: от 3939 рублей"));
-        roomList.add(new Room(R.drawable.housetwo, "Стандарт", "Цена: от 2500 рублей"));
-        roomList.add(new Room(R.drawable.housethree, "Премиум", "Цена: от 6495 рублей"));
-        roomList.add(new Room(R.drawable.housefour, "Стандарт", "Цена: от 3200 рублей"));
-        roomList.add(new Room(R.drawable.housefive, "Люкс", "Цена: от 4223 рублей"));
+        roomList.add(new Room(R.drawable.houseone, "Люкс", "Цена: от 3939 рублей", "Люкс - это роскошный номер улучшенной планировки, " +
+                "который состоит из 2-3 комнат, а его площадь не менее 35 кв.м2."));
+        roomList.add(new Room(R.drawable.housetwo, "Стандарт", "Цена: от 2500 рублей", "Стандарт - это номер с основными удобствами. " +
+                "Он идеально подходит для короткого пребывания или деловой поездки."));
+        roomList.add(new Room(R.drawable.housethree, "Премиум", "Цена: от 6495 рублей", "Премиум - это номер, который предлагает уникальное" +
+                " сочетание комфорта и стиля. Он оснащен современными удобствами и предлагает достаточно пространства для отдыха или работы."));
+        roomList.add(new Room(R.drawable.housefour, "Стандарт", "Цена: от 3200 рублей", "В стандартном номере обычно есть одна или две кровати," +
+                " полноценный санузел с ванной или душем, умывальником и унитазом."));
+        roomList.add(new Room(R.drawable.housefive, "Люкс", "Цена: от 4223 рублей", "Люкс оборудован улучшенной мебелью и планировкой по сравнению с Делюксом."));
         // Здесь вы можете добавить данные в список комнат
         // roomList.add(new Room(R.drawable.icon, "Название", "Цена", "Описание"));
 
