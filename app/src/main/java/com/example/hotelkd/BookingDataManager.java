@@ -70,4 +70,3 @@ public class BookingDataManager {
         db.delete("bookings", "bookingNumber = ?", new String[]{String.valueOf(bookingNumber)});
     }
 }
-

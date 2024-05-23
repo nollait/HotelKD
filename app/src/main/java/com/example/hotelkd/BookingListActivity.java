@@ -36,12 +36,11 @@ public class BookingListActivity extends AppCompatActivity {
         BookingAdapter adapter = new BookingAdapter(this, bookings);
         listView.setAdapter(adapter);
 
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Booking booking = (Booking) parent.getItemAtPosition(position);
                 showDeleteDialog(booking);
-                return true;
             }
         });
     }
@@ -56,7 +55,7 @@ public class BookingListActivity extends AppCompatActivity {
         SpannableString m = new SpannableString("Отмена");
 
 
-        // Изменение цвета текста на голубой
+        // Изменение цвета текста на красный
         s.setSpan(new ForegroundColorSpan(Color.RED), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         // Изменение размера текста на 15dp
         s.setSpan(new AbsoluteSizeSpan(20, true), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

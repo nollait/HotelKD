@@ -32,4 +32,3 @@ public class BookingDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
-

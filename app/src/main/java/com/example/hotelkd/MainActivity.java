@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 1500); // Задержка в 1500 миллисекунд, что равно 5 секундам
+        }, 1500); // Задержка в 1500 миллисекунд, что равно 1.5 секундам
     }
 }
